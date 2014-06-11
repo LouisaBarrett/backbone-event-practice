@@ -101,14 +101,17 @@ $(function() {
     flipField: function(e) {
       var value = $('.js-fieldDrop :selected').text();
       if (value == 'One') {
+        $('.js-zero').hide();
         $('.js-one').show();
         $('.js-two').hide();
         $('.js-three').hide();
       } else if (value == 'Two') {
+        $('.js-zero').hide();
         $('.js-one').hide();
         $('.js-two').show();
         $('.js-three').hide();
       } else if (value == 'Three') {
+        $('.js-zero').hide();
         $('.js-one').hide();
         $('.js-two').hide();
         $('.js-three').show();
